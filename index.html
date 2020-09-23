@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Connor Kobriger">
+    <meta name="description" content="A project that asks users what their favorite pizza topping is using a form.">
+
+    <meta property="og:image" content="https://i.pinimg.com/originals/bd/83/75/bd8375b4bb1a6b22583acdd99be81ed0.png">
+    <meta property="og:description" content="A project that asks users what their favorite pizza topping is using a form.">
+    <meta property="og:title" content="Pizza Form Project">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <title>Pizza Form Project</title>
+</head>
+
+<body>
+    <form action="data.json" method="POST">
+        <h1>Pizza Order</h1>
+        <p>Required fields will be marked with an <strong><abbr title="required">*</abbr></strong></p>
+        <section>
+            <fieldset>
+                <legend>User Information</legend>
+                <ul>
+                    <li>
+                        <label for="title_1">Username:</label>
+                        <input type="text" id="user.name" name="user.name">
+                    </li>
+                    <li>
+                        <label for="title_2">Password:</label>
+                        <input type="password" id="user.pswrd" name="user.pswrd">
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>What drink do you want?</legend>
+                <ul>
+                    <li>
+                        <input type="radio" id="drink.regCoke" name="drink">
+                        <label for="drink_1">Coke</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="drink.dietCoke" name="drink">
+                        <label for="drink_2">Diet Coke</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="drink.sprite" name="drink">
+                        <label for="drink_3">Sprite</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="drink.water" name="drink">
+                        <label for="drink_4">Water</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Pizza Preference</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="pizza.plain" name="pizza">
+                        <label for="pizza_1">Plain</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pizza.pepperone" name="pizza">
+                        <label for="pizza_2">Pepperone</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pizza.chicken" name="pizza">
+                        <label for="pizza_3">Chicken</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pizza.sausage" name="pizza">
+                        <label for="pizza_4">Plain</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <ul>
+                    <li><label for="specialInstructions">Special Instructions:</label></li>
+                    <textarea id="speicalInstructions" name="specialInstructions" rows="10" cols="30"></textarea><br>
+                    <button type="submit">Submit</button>
+                </ul>
+            </fieldset>
+        </section>
+        
+    </form>
+</body>
+
+</html>
